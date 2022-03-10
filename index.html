@@ -10,7 +10,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
     <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
-    <link href="css/main.css?ver=1.1.0" rel="stylesheet">
+    <link href="css/main.css?ver=1.1.0" rel="stylesheet">    
     <noscript>
         <style type="text/css">
             [data-aos] {
@@ -21,6 +21,83 @@
     </noscript>
 </head>
 
+<div class="modal fade" id="harmonyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Harmony</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            Developed a learning tool of drumps with Unity, Oculus and Photon.
+            <img src="images/Angela.jpg" alt="Image" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="teachingGeometryModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Teaching Geometry with VR</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="freestAIleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">FreestAIle</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="aerophobiaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Aerophobia meter in VR</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 <body id="top">
     <header>
         <div class="profile-page sidebar-collapse">
@@ -147,7 +224,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="progress-container progress-primary"><span
-                                            class="progress-badge">C++</span>
+                                            class="progress-badge">C++/C#</span>
                                         <div class="progress">
                                             <div class="progress-bar progress-bar-primary" data-aos="progress-full"
                                                 data-aos-offset="10" data-aos-duration="2000" role="progressbar"
@@ -178,60 +255,66 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 ml-auto mr-auto">
-                            <div class="h4 text-center mb-4 title">Portfolio</div>
+                            <div class="h4 text-center mb-4 title">Portfolio</div>                            
                             <div class="nav-align-center">
                                 <ul class="nav nav-pills nav-pills-primary" role="tablist">
-                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab"
-                                            href="#web-development" role="tablist"><i class="fa fa-laptop"
+                                    <li class="nav-item" ><a class="nav-link active" data-toggle="tab"
+                                            href="#project-development" role="tablist" title=""><i class="fa fa-laptop"
                                                 aria-hidden="true"></i></a></li>
-                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#graphic-design"
-                                            role="tablist"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
-                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#Photography"
-                                            role="tablist"><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#ideas-design"
+                                            role="tablist"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#learning"
+                                            role="tablist"><i class="fa fa-leanpub" aria-hidden="true"></i></a></li>
+                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
+
+
+
+
                     <div class="tab-content gallery mt-5">
-                        <div class="tab-pane active" id="web-development">
+                        <div class="tab-pane active" id="project-development">
                             <div class="ml-auto mr-auto">
+
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#harmonyModal" href="!#">
                                                 <figure class="cc-effect"><img src="images/project-1.jpg" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Recent Project</div>
-                                                        <p>Web Development</p>
+                                                        <div class="h4">Harmony</div>
+                                                        <p>Project Development</p>
                                                     </figcaption>
                                                 </figure>
                                             </a></div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#freestAIleModal" href="!#">
                                                 <figure class="cc-effect"><img src="images/project-2.jpg" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Startup Project</div>
-                                                        <p>Web Development</p>
+                                                        <div class="h4">FreestAIle</div>
+                                                        <p>Project Development</p>
                                                     </figcaption>
                                                 </figure>
                                             </a></div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#teachingGeometryModal" href="!#">
                                                 <figure class="cc-effect"><img src="images/project-3.jpg" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Food Order Project</div>
-                                                        <p>Web Development</p>
+                                                        <div class="h4">Teaching geometry with virtual reality</div>
+                                                        <p>Project Development</p>
                                                     </figcaption>
                                                 </figure>
                                             </a></div>
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#aerophobiaModal" href="!#">
                                                 <figure class="cc-effect"><img src="images/project-4.jpg" alt="Image" />
                                                     <figcaption>
-                                                        <div class="h4">Web Advertising Project</div>
-                                                        <p>Web Development</p>
+                                                        <div class="h4">Aerophobia meter in virtual reality</div>
+                                                        <p>Project Development</p>
                                                     </figcaption>
                                                 </figure>
                                             </a></div>
@@ -239,12 +322,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="graphic-design" role="tabpanel">
+                        <div class="tab-pane" id="ideas-design" role="tabpanel">
                             <div class="ml-auto mr-auto">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a href="#graphic-design">
+                                            data-aos-anchor-placement="top-bottom"><a href="#ideas-design">
                                                 <figure class="cc-effect"><img src="images/graphic-design-1.jpg"
                                                         alt="Image" />
                                                     <figcaption>
@@ -289,7 +372,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="Photography" role="tabpanel">
+                        <div class="tab-pane" id="learning" role="tabpanel">
                             <div class="ml-auto mr-auto">
                                 <div class="row">
                                     <div class="col-md-6">
@@ -509,7 +592,7 @@
         </div>
     </div>
     <footer class="footer">
-        <div class="h4 title text-center">Template by: Anthony Barnett</div>
+        <div class="h6 title text-center">Template by: Anthony Barnett</div>
         <div class="text-center text-muted">
             <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com"
                     target="_blank">TemplateFlip</a></p>
