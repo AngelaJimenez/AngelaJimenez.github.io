@@ -3988,14 +3988,14 @@ tbody.collapse.show {
 
 .badge-success {
     color: #fff;
-    background-color: #28a745
+    background-color: #7f28a7
 }
 
 .badge-success[href]:focus,
 .badge-success[href]:hover {
     color: #fff;
     text-decoration: none;
-    background-color: #1e7e34
+    background-color: #601e7e
 }
 
 .badge-info {
@@ -4129,7 +4129,7 @@ tbody.collapse.show {
 }
 
 .alert-success {
-    color: #155724;
+    color: #441557;
     background-color: #d4edda;
     border-color: #c3e6cb
 }
@@ -4139,7 +4139,7 @@ tbody.collapse.show {
 }
 
 .alert-success .alert-link {
-    color: #0b2e13
+    color: #260b2e
 }
 
 .alert-info {
@@ -4395,7 +4395,7 @@ button.list-group-item-secondary.active {
 }
 
 .list-group-item-success {
-    color: #155724;
+    color: #4c1557;
     background-color: #c3e6cb
 }
 
@@ -4415,8 +4415,8 @@ button.list-group-item-success:hover {
 a.list-group-item-success.active,
 button.list-group-item-success.active {
     color: #fff;
-    background-color: #155724;
-    border-color: #155724
+    background-color: #481557;
+    border-color: #3d1557
 }
 
 .list-group-item-info {
