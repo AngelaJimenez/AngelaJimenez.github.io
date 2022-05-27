@@ -3785,7 +3785,12 @@ Created using IcoMoon - icomoon.io
 
 .section-signup {
   padding-top: 20vh; }
-
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 .page-header {
   height: 100vh;
   max-height: 1050px;
