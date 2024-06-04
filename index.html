@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Angela :) </title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75677a1932.js" crossorigin="anonymous" rel="stylesheet"></script>
     <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
     <link href="css/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
     <link href="css/main.css?ver=1.1.0" rel="stylesheet">    
@@ -19,6 +19,48 @@
             }
         </style>
     </noscript>
+    <style>
+        .container-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        @media (min-width: 768px) {
+            .container-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 30px;
+            }
+        }
+
+        .cc-portfolio-image {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cc-portfolio-image figure {
+            margin: 0;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            height: 100px; /* Adjust this value as needed */
+        }
+
+        .cc-portfolio-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .cc-portfolio-image figcaption {
+            text-align: left;
+        } 
+        /* Added styling to set the height of the figure */
+        .cc-portfolio-image figure {
+            height: 200px; /* Adjust this value as needed */
+        }
+        
+    </style>
 </head>
 
 <div class="modal fade" id="hiraganavr" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -301,6 +343,10 @@
             </nav>
         </div>
     </header>
+
+
+
+
     <div class="page-content">
         <div>
             <div class="profile-page">
@@ -370,10 +416,6 @@
                                         <div class="col-sm-8">al.jimenezf@uniandes.edu.co jimen198@purdue.edu</div>
                                     </div>
                                     <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
-                                        <div class="col-sm-8">+1 (347) 238-8566</div>
-                                    </div>
-                                    <div class="row mt-3">
                                         <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
                                         <div class="col-sm-8">English (C1) and Spanish (Native)</div>
                                     </div>
@@ -383,90 +425,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="section" id="skill">
-                <div class="container">
-                    <div class="h4 text-center mb-4 title">Professional Skills</div>
-                    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">Java</span>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
-                                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 75%;"></div><span class="progress-value">75%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">Python</span>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
-                                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 65%;"></div><span class="progress-value">65%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">C++/C#</span>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
-                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 70%;"></div><span class="progress-value">70%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">Unity</span>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
-                                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 65%;"></div><span class="progress-value">65%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">Research</span>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
-                                                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 65%;"></div><span class="progress-value">65%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="progress-container progress-primary"><span
-                                            class="progress-badge">VR/AR</span>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-primary" data-aos="progress-full"
-                                                data-aos-offset="10" data-aos-duration="2000" role="progressbar"
-                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                                                style="width: 70%;"></div><span class="progress-value">70%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <div class="section" id="portfolio">
                 <div class="container">
                     <div class="row">
@@ -475,7 +433,7 @@
                             <div class="nav-align-center">
                                 <ul class="nav nav-pills nav-pills-primary" role="tablist">
                                     <li class="nav-item" ><a class="nav-link active" data-toggle="tab"
-                                            href="#project-development" role="tablist" title=""><i class="fa fa-laptop"
+                                            href="#project-development-unity" role="tablist" title=""><i class="fa-brands fa-unity"
                                                 aria-hidden="true"></i></a></li>
                                     
                                 </ul>
@@ -483,19 +441,50 @@
                         </div>
                     </div>
 
-
+                    <script>
+                        const divs = [
+                            '<div><p> hi Item 1</p></div>',
+                            '<div>Item 2</div>',
+                            '<div>Item 3</div>',
+                            '<div>Item 4</div>',
+                            '<div>Item 5</div>'
+                        ];
+                
+                        const leftColumn = document.getElementById('left-column');
+                        const rightColumn = document.getElementById('right-column');
+                
+                        divs.forEach((div, index) => {
+                            if (index % 2 === 0) {
+                                leftColumn.innerHTML += div;
+                            } else {
+                                rightColumn.innerHTML += div;
+                            }
+                        });
+                    </script>
 
 
                     <div class="tab-content gallery mt-5">
                         <div class="tab-pane active" id="project-development">
                             <div class="ml-auto mr-auto">
 
-                                <div class="row">
-                                    <div class="col-md-6">
+                                <div class="container">
+                                    <div class="container-grid">
                                        
-                                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#hiraganavr" href="!#">
+                                            <figure class="cc-effect"><img src="images/HiraganaVR.png" alt="Image"  width="550" height="370" />
+                                                <figcaption style.vertical-align : top >
+                                                    <div class="h4">Hiragana VR</div>
+                                                    <p>Engine: Unity</p>
+                                                    <p>Language: C#</p>
+                                                    <p>2024 Collaborative</p>
+                                                
+                                                </figcaption>
+                                            </figure>
+                                        </a></div>
+                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#escapevr" href="!#">
-                                                <figure class="cc-effect"><img src="images/escapevrmain.jpg" alt="Image" />
+                                                <figure class="cc-effect"><img src="images/escapevrmain.jpg" alt="Image"  width="550" height="370"  />
                                                     <figcaption>
                                                         <div class="h4">Escape VR</div>
                                                         <p>Engine: Unity</p>
@@ -505,9 +494,33 @@
                                                     </figcaption>
                                                 </figure>
                                             </a></div>
+                                            
+                                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                                data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#rescueCraft" href="!#">
+                                                    <figure class="cc-effect"><img src="images/RescueCraft.png" alt="Image"  width="550" height="370" />
+                                                        <figcaption>
+                                                            <div class="h4">RescueCraft: Collaborative VR Environment for Emergency Training</div>
+                                                            <p>Engine: Unity</p>
+                                                            <p>Language: C#</p>
+                                                            <p>2022-2023 Collaborative </p>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a></div>
+                                                <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                                data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#optimizationVRModal" href="!#">
+                                                    <figure class="cc-effect"><img src="images/CompuVisualFrame.jpg" alt="Image"  width="550" height="370" />
+                                                        <figcaption>
+                                                            <div class="h4">Movile Development Optimization in VR</div>
+                                                            <p>Engine: Unity</p>
+                                                            <p>Language: C#</p>
+                                                            <p>2023 Programming Solo </p>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a></div>
+    
                                             <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#boomsim" href="!#">
-                                                <figure class="cc-effect"><img src="images/BoomSim.png" alt="Image" />
+                                                <figure class="cc-effect"><img src="images/BoomSim.png" alt="Image"  width="550" height="370"  />
                                                     <figcaption>
                                                         <div class="h4">Boom Simulator</div>
                                                         <p>Engine: Unity</p>
@@ -519,7 +532,7 @@
                                         
                                             <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#harmonyModal" href="!#">
-                                                <figure class="cc-effect"><img src="images/Harmony2.jpeg" alt="Image"  class="center" height="288" />
+                                                <figure class="cc-effect"><img src="images/Harmony2.jpeg" alt="Image"  class="center"  width="550" height="370"  />
                                                     <figcaption>
                                                         <div class="h4">Harmony</div>
                                                         <p>Engine: Unity</p>
@@ -531,7 +544,7 @@
 
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#teachingGeometryModal" href="!#">
-                                                <figure class="cc-effect"><img src="images/TeachingGeometry1.png" alt="Image" />
+                                                <figure class="cc-effect"><img src="images/TeachingGeometry1.png" alt="Image"  width="550" height="370" />
                                                     <figcaption>
                                                         <div class="h4">Teaching geometry with virtual reality</div>
                                                         <p>Engine: Unity</p>
@@ -540,43 +553,22 @@
                                                     </figcaption>
                                                 </figure>
                                             </a></div>
-                                    </div>
-                                    <div class="col-md-6">
+                                   
+                                          
+
                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#hiraganavr" href="!#">
-                                            <figure class="cc-effect"><img src="images/HiraganaVR.png" alt="Image" />
-                                                <figcaption style.vertical-align : top >
-                                                    <div class="h4">Hiragana VR</div>
-                                                    <p>Engine: Unity</p>
-                                                    <p>Language: C#</p>
-                                                    <p>2024 Collaborative</p>
-                                                
-                                                </figcaption>
-                                            </figure>
-                                        </a></div>
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#rescueCraft" href="!#">
-                                                <figure class="cc-effect"><img src="images/RescueCraft.png" alt="Image" />
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#aerophobiaModal" href="!#">
+                                                <figure class="cc-effect"><img src="images/aerophobia.jpg" alt="Image" width="550" height="370"  />
                                                     <figcaption>
-                                                        <div class="h4">RescueCraft: Collaborative VR Environment for Emergency Training</div>
+                                                        <div class="h4">Aerophobia meter in virtual reality</div>
                                                         <p>Engine: Unity</p>
                                                         <p>Language: C#</p>
-                                                        <p>2022-2023 Collaborative </p>
+                                                        <p>2019 Solo </p>
                                                     </figcaption>
                                                 </figure>
-                                            </a></div>
-                                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#optimizationVRModal" href="!#">
-                                                <figure class="cc-effect"><img src="images/CompuVisualFrame.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Movile Development Optimization in VR</div>
-                                                        <p>Engine: Unity</p>
-                                                        <p>Language: C#</p>
-                                                        <p>2023 Programming Solo </p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            </a>
+                                        </div>
+                                          <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#freestAIleModal" href="!#">
                                                 <figure class="cc-effect"><img src="images/freestAIle.jpg" alt="Image" />
                                                     <figcaption>
@@ -585,23 +577,15 @@
                                                         <p>2021 Collaborative </p>
                                                     </figcaption>
                                                 </figure>
-                                            </a></div>
-
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#aerophobiaModal" href="!#">
-                                                <figure class="cc-effect"><img src="images/aerophobia.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">Aerophobia meter in virtual reality</div>
-                                                        <p>Engine: Unity</p>
-                                                        <p>Language: C#</p>
-                                                        <p>2019 Solo </p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
+                                            </a></div> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+
+
+
                         <div class="tab-pane" id="ideas-design" role="tabpanel">
                             <div class="ml-auto mr-auto">
                                 <div class="row">
@@ -697,7 +681,9 @@
                                                         <p>Photography</p>
                                                     </figcaption>
                                                 </figure>
-                                            </a></div>
+                                            </a>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -721,9 +707,8 @@
                                 <div class="card-body">
                                     <div class="h5">Teaching Assistant and Research Assistant</div>
                                     <p><ul> <li> Prepare, teach and grade Spanish Undergraduate levels 2 and 3. </li>
-                                        <li>Teaching environments .</li>
-                                        <li>Scripting and analysis of Unity projects with C# and C++.</li>
-                                        <li>Debug and understand the Unity source code and the projects presented with problems</li>
+                                        <li>Developed a virtual environment in Unity fro teaching japanese .</li>
+                                        <li>Scripting and designing the logic for different activities on the virtual environment.</li>
                                     </ul></p>
                                 </div>
                             </div>
@@ -941,8 +926,6 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="card-body">
-                                                    <p class="mb-0"><strong>Phone</strong></p>
-                                                    <p class="pb-2">+1 (347) 238-8566</p>
                                                     <p class="mb-0"><strong>Email</strong></p>
                                                     <p>al.jimenezf@uniandes.edu.co jimen198@purdue.edu </p>
                                                 </div>
