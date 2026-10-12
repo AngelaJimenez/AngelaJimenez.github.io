@@ -5,7 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Angela :) </title>
+    <title>Angela L. Jimenez | XR and Human-AI Interaction Research</title>
+    <meta name="description" content="Angela L. Jimenez, PhD student at Purdue University. I build and evaluate LLM-driven agents that teach people procedural skills in XR. Seeking research internships.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Angela L. Jimenez | XR and Human-AI Interaction Research">
+    <meta property="og:description" content="PhD student at Purdue University. I build and evaluate LLM-driven agents that teach people procedural skills in XR.">
+    <meta property="og:image" content="https://angelajimenez.github.io/images/og-preview.jpg">
+    <meta property="og:url" content="https://angelajimenez.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Angela L. Jimenez | XR and Human-AI Interaction Research">
+    <meta name="twitter:description" content="PhD student at Purdue University. I build and evaluate LLM-driven agents that teach people procedural skills in XR.">
+    <meta name="twitter:image" content="https://angelajimenez.github.io/images/og-preview.jpg">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
     <script src="https://kit.fontawesome.com/75677a1932.js" crossorigin="anonymous" rel="stylesheet"></script>
     <link href="css/aos.css?ver=1.1.0" rel="stylesheet">
@@ -20,6 +33,15 @@
         </style>
     </noscript>
     <style>
+        /* Text project tabs (the theme default is 60px icon circles) */
+        #portfolio .nav-pills .nav-item .nav-link {
+            width: auto;
+            height: auto;
+            padding: 10px 20px;
+            margin: 0 5px 10px;
+            line-height: 1.3;
+            white-space: nowrap;
+        }
         .container-grid {
             display: grid;
             grid-template-columns: 1fr;
@@ -73,6 +95,41 @@
     </style>
 </head>
 
+<div class="modal fade" id="llmLecture" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Transforming Lecture Videos into LLM-Enhanced Immersive Learning Experiences</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <img src="images/LLM-enhancedTeasser.jpg" alt="Video-to-immersive lecture workflow" style="width:100%;margin-bottom:12px;" />
+            A workflow that turns a recorded video lecture into an interactive VR lecture. The instructor is recreated as a pedagogical agent with a cloned voice and gestures extracted from the original video, and a prompt-engineered LLM lets learners ask questions at expert-defined breakpoints and hear answers grounded in the lecture material. In a between-groups study (N = 69) comparing Video, Desktop, and Immersive versions, the Immersive condition produced significantly higher learning gains than the Video condition, along with higher engagement and intrinsic interest, at the cost of more mental effort.
+            <br><br>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe loading="lazy" class="embed-responsive-item" src="https://www.youtube.com/embed/m4G4kGlRxGE" allowfullscreen></iframe>
+            </div>
+            <br>
+            <b>Tools Used:</b>
+            <ul>
+                <li>Unity and C#</li>
+                <li>GPT-4o with retrieval-augmented generation, and Llama</li>
+                <li>OpenAI Whisper for speech recognition, ElevenLabs for voice cloning</li>
+                <li>ASAP for motion extraction from video, Character Creator 4 for the instructor's digital double</li>
+            </ul>
+            <b>My Role:</b> First author. Designed the pipeline, built the application, and ran the study.
+            <br><br>
+            <a class="btn btn-primary btn-sm" href="https://www.youtube.com/watch?v=m4G4kGlRxGE" target="_blank" rel="noopener">Watch on YouTube</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+
 <div class="modal fade" id="virtualRoomie" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -84,12 +141,12 @@
 
         </div>
 
-                <div class="modal-body"The project was update as a .zip to a github repository.>
+                <div class="modal-body">
             Virtual Roomie is a VR project that enables collaborative interior design with a virtual agent. The system combines turn-based interaction with an optimization-driven agent that adapts furniture placement decisions based on user input, supporting more natural and engaging human-agent co-design experiences. 
             <br>
 
 
-            <iframe width="420" height="315"
+            <iframe loading="lazy" width="420" height="315"
             src="https://www.youtube.com/embed/OW8fCjWY-e8?si=ljcQOCgXFJv9bE6t?mute=1&loop=1">
             </iframe>            
             <br>
@@ -131,11 +188,11 @@
           </button>
 
         </div>
-        <div class="modal-body"The project was update as a .zip to a github repository.>
+        <div class="modal-body">
             Hiragana VR is an educational VR game that teaches Japanese food names and improves understanding of food orders. Players listen to orders in Japanese and select the correct dishes to serve, with feedback provided for mistakes. 
             <br>
             A practice mode allows users to review dish names, hear pronunciations, and interact with items to boost vocabulary. I developed all code and UIs, creating an engaging tool for learning Japanese cuisine and language.<br>
-            <iframe width="420" height="315"
+            <iframe loading="lazy" width="420" height="315"
             src="https://www.youtube.com/embed/M3CjfxzVmS0?mute=1&loop=1">
             </iframe>            
             <br>
@@ -178,7 +235,7 @@
           </button>
 
         </div>
-        <div class="modal-body"The project was update as a .zip to a github repository.>
+        <div class="modal-body">
             EscapeVR is a virtual reality escape room where two players solve puzzles and work together to escape a dungeon. Showcased at SOFA, Colombia's largest video game festival, this project was a collaborative effort with a friend.
             <br>
             <br>
@@ -209,7 +266,7 @@
               </ul>
 
               <br>Trailer video (Currently in spanish but will be changed):
-              <iframe width="420" height="315"
+              <iframe loading="lazy" width="420" height="315"
               src="https://www.youtube.com/embed/WK2SxbgI36U?mute=1&loop=1">
               </iframe>            
   
@@ -232,26 +289,26 @@
           </button>
 
         </div> 
-        <div class="modal-body"The project was update as a .zip to a github repository.>
+        <div class="modal-body">
             <p>
                 This project involved developing an environment editor specifically for desktop use to create customizable fire evacuation training scenarios. The editor allows trainers to modify and interact with objects, creating realistic environments for diverse training needs.
             </p>
     
-            <img src="images/FireFightingVideo2.gif" alt="GIF showing VR and desktop collaboration" title="Future Collaboration Feature">
+            <video src="images/FireFightingVideo2.mp4" class="modal-loop" loop muted playsinline preload="none" aria-label="Animation showing VR and desktop collaboration" title="Future Collaboration Feature" style="max-width:100%;height:auto;"></video>
           
             <p>
                 The focus was on building the logic for object creation and manipulation, providing an effective and engaging way for users to learn and practice fire evacuation procedures. This interactive approach ensures that trainees can adapt to various situations in a safe, virtual space.
             </p>
     
             
-                <img src="images/FireFightingAnimationFirstPersonView2.gif" alt="GIF showing object interaction" title="Object Interaction in Editor">
+                <video src="images/FireFightingAnimationFirstPersonView2.mp4" class="modal-loop" loop muted playsinline preload="none" aria-label="Animation showing object interaction" title="Object Interaction in Editor" style="max-width:100%;height:auto;"></video>
             
     
             <p>
                 While the current version is designed for desktop use, the project is envisioned to support future collaboration between VR and desktop users. This will enhance its application and make training sessions more versatile and inclusive.
             </p>
     
-            <img src="images/FireFightingAnimation FirstPerson View.gif" alt="GIF showing environment editor interface" title="Environment Editor Interface">
+            <video src="images/FireFightingAnimationFirstPersonView.mp4" class="modal-loop" loop muted playsinline preload="none" aria-label="Animation showing environment editor interface" title="Environment Editor Interface" style="max-width:100%;height:auto;"></video>
 
             <p>
                 The editor's flexibility allows trainers to create scenarios that reflect real-world challenges, helping firefighters and emergency responders to develop crucial skills. This hands-on approach is crucial for mastering optimization techniques and safety protocols.
@@ -300,7 +357,7 @@
 
             <a href="https://github.com/AngelaJimenez/optimizacionenmoviles">GitHub repository</a>
              
-            <iframe width="420" height="315"
+            <iframe loading="lazy" width="420" height="315"
                 src="https://www.youtube.com/embed/SOMaZCQ8CWQ?mute=1&loop=1">    
             </iframe>            
             <br>
@@ -324,7 +381,7 @@
           </button>
 
         </div>
-        <div class="modal-body"The project was update as a .zip to a github repository.>
+        <div class="modal-body">
             Developed a learning tool for drums using Unity, Oculus, and Photon, aimed at creating the ideal environment for musicians and learners to practice and develop new skills. This tool allowed for guided learning sessions, where a teacher or friend could assist in the learning process, offering real-time feedback and interaction.
             <br>
 The project involved integrating various technical components, including XR interactions between objects and synchronization using Photon. This allowed for a seamless and immersive experience, where multiple users could interact with the virtual drum set in real time.
@@ -335,7 +392,7 @@ The project involved integrating various technical components, including XR inte
 <br>
 <a href="https://github.com/AngelaJimenez/harmony">GitHub repository</a>
             <br>
-             <video width="384" height="288" controls>
+             <video width="384" height="288" controls preload="none">
                 <source src="images/harmonyshortvideo.mp4" type="video/mp4">
                 Your browser does not support the video tag. Here is a youtube video: https://youtu.be/zGjTCYMH6rM
               </video>    
@@ -359,9 +416,9 @@ The project involved integrating various technical components, including XR inte
         </div>
         <div class="modal-body">
             This project aimed to analyze the impact of virtual reality on children's learning of geometry, focusing on students aged 9 to 14. Collaborating with a partner, I developed a Unity environment that we imported into Altspace, a VR platform known for its educational and social interaction capabilities.
-            <img src="images/TeachingGeometry3.png" alt="Image" />
+            <img src="images/TeachingGeometry3.png" alt="Teaching geometry VR environment" />
             The project involved two main components: first, students observed geometric figures alongside their corresponding equations, allowing them to visualize different transformations. The second part was more interactive, with exercises that required students to identify transformations between figures, encouraging active learning and engagement. 
-            <img src="images/TeachingGeometry1.png" alt="Image" />
+            <img src="images/TeachingGeometry1.jpg" alt="Teaching geometry VR scene" />
             
             Feedback from the six participants revealed that VR had a positive effect on their understanding of geometric concepts. This outcome suggests that Altspace is an effective tool for educational purposes, particularly in enhancing both learning and social participation.
                </div>
@@ -383,7 +440,7 @@ The project involved integrating various technical components, including XR inte
         </div>
         <div class="modal-body">
             The purpose of this research project was to analyze the limits of the Artificial Intelligence branch specialized in Natural Language Processing (No! this is not a Visual Computing project, this is one I made on AI in order to explore other fields that some day may work on VR). As a result, the idea of this project was to design an algorithm capable of creating a written production made of sentences that follow a logical syntax scheme and a semantics defined by the meaning of each word that is chosen. This algorithm seeks to imitate the process carried out by people who perform the art of freestyle, an activity that consists in producing a type of lyricism characterized by its free and improvised style.
-            <img src="images/FreestAIle1.jpg" alt="Image" />
+            <img src="images/FreestAIle1.jpg" alt="FreestAIle project screenshot" />
             Therefore, the program receives a limited amount of information to start off picking a theme which will be used to determine the words that should be selected from a pool of vocabulary, either for their meaning or intent, in order to build a coherent sentence. 
 
         </div>
@@ -405,7 +462,7 @@ The project involved integrating various technical components, including XR inte
         </div>
         <div class="modal-body">
             This was the first VR project I worked on during my time at university. While it may not have been perfect, it was a significant learning experience that introduced me to the vast opportunities within VR/AR. Through this project, I also learned how to use XR teleport and Oculus for VR, which expanded my understanding of immersive technologies. Feel free to check out the video to see how it all came together!
-          <video width="384" height="288" controls>
+          <video width="384" height="288" controls preload="none">
             <source src="images/aerophobia.mp4" type="video/mp4">
             Your browser does not support the video tag. Here is a youtube video: https://youtu.be/Gsjda9BfQxw
           </video>    
@@ -459,7 +516,7 @@ The project involved integrating various technical components, including XR inte
         </div>
         <div class="modal-body">
              The Ruins of the Treasure is a game developed in Unreal Engine to learn the platform and explore its blueprint system. With my background in programming and Unity, I created an adventure where players navigate ancient ruins, dodge projectiles from enemy towers, and use their own projectiles to destroy these towers. The ultimate goal is to reach a chest filled with treasure on the other side of the ruins.        
-            <img src="images/videoshowUnrealRuinsTreasure.gif" alt="GIF showing the game " >
+            <video src="images/videoshowUnrealRuinsTreasure.mp4" class="modal-loop" loop muted playsinline preload="none" aria-label="Animation showing the game " style="max-width:100%;height:auto;"></video>
 
             I developed several key blueprints for this project, including the <code>enemyshooter</code>, which fires at the player every 3 seconds and self-destructs when hit by the player’s projectile. Another blueprint handles UI updates for the player, changing when damage is taken and managing collision detection to ensure smooth gameplay.
             <br> 
@@ -493,7 +550,7 @@ The project involved integrating various technical components, including XR inte
         <div class="profile-page sidebar-collapse">
             <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
                 <div class="container">
-                    <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip"></a>
+                    <div class="navbar-translate"><a class="navbar-brand" href="#top">Angela L. Jimenez</a>
                         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navigation" aria-controls="navigation" aria-expanded="false"
                             aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span
@@ -502,12 +559,10 @@ The project involved integrating various technical components, including XR inte
                     </div>
                     <div class="collapse navbar-collapse justify-content-end" id="navigation">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">About</a></li>
-                            <!-- <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Skills</a></li> -->
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Portfolio</a></li>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a>
-                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Education</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#research">Research</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#publications">Publications</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#portfolio">Projects</a></li>
+                            <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experience</a></li>
                             <li class="nav-item"><a class="nav-link smooth-scroll" href="#contact">Contact</a></li>
                         </ul>
                     </div>
@@ -528,14 +583,16 @@ The project involved integrating various technical components, including XR inte
                             style="background-image: url('images/backgroundVR.jpeg')"></div>
                         <div class="container">
                             <div class="content-center">
-                                <div class="cc-profile-image"><a href="#"></a><img src="images/Angela.jpg"
-                                            alt="Image" /></a></div>
-                                <div class="h2 title">Angela Jimenez</div>
-                                <p class="category text-white">Software Engineer, VR/AR Engineer</p><a
+                                <div class="cc-profile-image"><a href="#top"><img src="images/Angela-ISMAR.jpg"
+                                            alt="Angela L. Jimenez presenting at IEEE ISMAR 2025" /></a></div>
+                                <div class="h2 title">Angela L. Jimenez</div>
+                                <p class="category text-white mb-1">PhD Student, XR and Human-AI Interaction Research</p>
+                                <p class="text-white mb-3" style="max-width:640px;margin:0 auto;">I build and evaluate LLM-driven agents that teach people procedural skills in XR.</p>
+                                <p class="mb-3"><span style="display:inline-block;background:#fff;color:#1a7f4b;font-weight:700;border-radius:20px;padding:6px 16px;font-size:.85rem;"><i class="fa fa-circle" style="font-size:.5rem;vertical-align:middle;margin-right:6px;"></i>Open to research internships</span></p><a
                                     class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in"
-                                    data-aos-anchor="data-aos-anchor">Text Me</a>
+                                    data-aos-anchor="data-aos-anchor">Contact Me</a>
                                     <a class="btn btn-primary image fit" 
-                                    href="Angela_CV_Research.pdf"
+                                    href="Angela_CV_2026.pdf"
                                     data-aos="zoom-in" data-aos-anchor="data-aos-anchor" target="_blank">Research CV</a>
                             </div>
                         </div>
@@ -560,50 +617,151 @@ The project involved integrating various technical components, including XR inte
                     </div>
                 </div>
             </div>
-            <div class="section" id="about">
+            <div class="section" id="research">
                 <div class="container">
+                    <div class="h4 text-center mb-4 title">Research</div>
+
                     <div class="card" data-aos="fade-up" data-aos-offset="10">
                         <div class="row">
-                            <div class="col-lg-6 col-md-12">
+                            <div class="col-lg-7 col-md-12">
                                 <div class="card-body">
-                                    <div class="h4 mt-0 title">About</div>
-                                    <p>Hi! I’m beginning my PhD in Computer Graphics Technology at Purdue as an Andrews Fellow and Excellence Award recipient. With experience as a Teaching Assistant, Research Assistant, and  intern at Unity, I’m skilled in VR development with Unity and C#, and I’m expanding my expertise in HLSL, GLSL, and animation to advance computer graphics applications across fields. </p>
-
+                                    <div class="h5 mt-0 title">Summary</div>
+                                    <p>I am a second-year Ph.D. researcher at Purdue University working on education in XR and human-AI interaction in XR. I build and evaluate LLM-driven pedagogical agents that teach procedural skills in VR, and I study how people co-design with AI agents in immersive spaces. I have first-author papers at IEEE ISMAR and TVCG, and I prototype in Unity/C#, Python, and web stacks.</p>
+                                    <p class="mb-0"><strong>Advisors:</strong> Dr. Christos Mousas and Dr. Alejandra Magana, School of Applied and Creative Computing.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-12">
+                            <div class="col-lg-5 col-md-12">
                                 <div class="card-body">
-                                    <div class="h4 mt-0 title">Basic Information</div>
-                                    <!-- <div class="row">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Age:</strong></div>
-                                        <div class="col-sm-8">21</div>
-                                    </div> -->
-                                    <div class="row mt-3">
-                                        <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-                                        <div class="col-sm-8">al.jimenezf@outlook.com jimen198@purdue.edu </div>
+                                    <div class="h5 mt-0 title">Quick Facts</div>
+                                    <div class="row mt-2">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Status:</strong></div>
+                                        <div class="col-sm-8">Seeking research internships</div>
                                     </div>
-                                    <div class="row mt-3">
+                                    <div class="row mt-2">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Focus:</strong></div>
+                                        <div class="col-sm-8">Embodied pedagogical agents, LLMs, XR learning and training, human-AI co-design</div>
+                                    </div>
+                                    <div class="row mt-2">
                                         <div class="col-sm-4"><strong class="text-uppercase">Language:</strong></div>
                                         <div class="col-sm-8">English (C1) and Spanish (Native)</div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                                        <div class="col-sm-8"><a href="mailto:jimen198@purdue.edu">jimen198@purdue.edu</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="h5 text-center mt-5 mb-3 title" id="publications">Peer-Reviewed Publications</div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="10">
+                        <div class="card-body">
+                            <div class="h5 mt-0 mb-1 title">Transforming Lecture Videos into LLM-Enhanced Immersive Learning Experiences</div>
+                            <p class="mb-1"><strong>A. L. Jimenez</strong>, P. Acevedo, M. Choi, D. Cui, C. Mousas</p>
+                            <p class="mb-2 text-muted"><em>IEEE Transactions on Visualization and Computer Graphics (Proc. of IEEE ISMAR 2026), TBA(TBA), pp. TBA, 2026</em></p>
+                            <p class="mb-3" style="font-size:0.9rem;">First author. Designed an automated pipeline that converts lecture video into interactive immersive environments driven by LLM-based pedagogical agents (GPT and Llama).</p>
+                            <div><span class="btn btn-default btn-sm mr-1 mb-1 disabled" style="opacity:.6;cursor:default;">Paper (TBA)</span><a class="btn btn-primary btn-sm mr-1 mb-1" href="https://www.youtube.com/watch?v=m4G4kGlRxGE" target="_blank" rel="noopener">Video</a></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="10">
+                        <div class="card-body">
+                            <div class="h5 mt-0 mb-1 title">Virtual Roomie: Immersive Layout Co-design with a Virtual Agent</div>
+                            <p class="mb-1"><strong>A. L. Jimenez</strong>, P. Acevedo, C. Mousas</p>
+                            <p class="mb-2 text-muted"><em>IEEE International Symposium on Mixed and Augmented Reality, pp. 131-141, 2025</em></p>
+                            <p class="mb-3" style="font-size:0.9rem;">First author. Designed the cost-based layout optimization and spatial-reasoning algorithms, built the full VR application, and ran the human-subjects evaluation.</p>
+                            <div><a class="btn btn-primary btn-sm mr-1 mb-1" href="https://web.ics.purdue.edu/~cmousas/papers/conf25-IEEEISMAR-VirtualRoomie.pdf" target="_blank" rel="noopener">Paper</a><a class="btn btn-primary btn-sm mr-1 mb-1" href="https://www.youtube.com/watch?v=OW8fCjWY-e8" target="_blank" rel="noopener">Video</a><a class="btn btn-primary btn-sm mr-1 mb-1" href="https://web.ics.purdue.edu/~cmousas/papers/conf25-IEEEISMAR-VirtualRoomie-supplementary.pdf" target="_blank" rel="noopener">Supplementary material</a></div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="10">
+                        <div class="card-body">
+                            <div class="h5 mt-0 mb-1 title">An Exploration of the Effects of in-VR Assessment Format on User Experience and Performance</div>
+                            <p class="mb-1">P. Acevedo, <strong>A. L. Jimenez</strong>, A. Magana, B. Benes, C. Mousas</p>
+                            <p class="mb-2 text-muted"><em>International Conference on Artificial Reality and Telexistence &amp; Eurographics Symposium on Virtual Environments, pp. 1-10, 2024</em></p>
+                            <p class="mb-3" style="font-size:0.9rem;">Second author. Contributed to system implementation, experimental design, data collection, and analysis.</p>
+                            <div><a class="btn btn-primary btn-sm mr-1 mb-1" href="https://web.ics.purdue.edu/~cmousas/papers/conf24-EGVE-AssessmentFormat.pdf" target="_blank" rel="noopener">Paper</a><a class="btn btn-primary btn-sm mr-1 mb-1" href="https://www.youtube.com/watch?v=LGtarkRIpFc" target="_blank" rel="noopener">Video</a></div>
+                        </div>
+                    </div>
+                    <p class="text-center mb-0"><a href="https://scholar.google.com/citations?user=rY7QJM4AAAAJ" target="_blank">See all on Google Scholar</a></p>
+
+                    <div class="h5 text-center mt-5 mb-3 title">Research Experience</div>
+                    <div class="cc-experience">
+                    <div class="card" data-aos="fade-up" data-aos-offset="10">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary">
+                                <div class="card-body cc-experience-header">
+                                    <p>Aug 2025 - Present</p>
+                                    <div class="h5">Purdue University</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="h5">Graduate Research Assistant</div>
+                                    <p class="category">Advisor: Dr. Christos Mousas, School of Applied and Creative Computing</p>
+                                    <ul>
+                                        <li>Build and evaluate <strong>LLM-driven embodied pedagogical agents</strong> in VR that combine conversational behavior with agent actions in the simulated environment.</li>
+                                        <li>Prototype in <strong>Unity/C#</strong> (agent behavior architectures, human-agent co-design workflows, spatial interaction techniques) and <strong>Python</strong>, and run human-subjects studies end to end (design, IRB, data collection, quantitative and qualitative analysis).</li>
+                                        <li>Lead a PRISMA-style systematic review on <strong>psychomotor skill acquisition in VR</strong> (10,000+ records, reproducible Python screening pipeline).</li>
+                                        <li>Collaborate across concurrent projects and mentor junior team members on XR development.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="10">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary">
+                                <div class="card-body cc-experience-header">
+                                    <p>Jan 2024 - May 2025</p>
+                                    <div class="h5">Purdue University</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="h5">Graduate Research Assistant</div>
+                                    <p class="category">Advisor: Dr. Kazumi Hatasa, School of Languages and Cultures</p>
+                                    <ul>
+                                        <li>Designed and built an immersive VR language-learning environment in Unity with text-to-speech conversational interaction and modular instructional activities.</li>
+                                        <li>Optimized performance and ran usability testing so the system runs on standalone head-mounted displays in real classrooms.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" data-aos="fade-up" data-aos-offset="10">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary">
+                                <div class="card-body cc-experience-header">
+                                    <p>2020 - 2022</p>
+                                    <div class="h5">Purdue University (SURF 2022) and Universidad de los Andes</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="card-body">
+                                    <div class="h5">Undergraduate and Summer Researcher</div>
+                                    <ul>
+                                        <li>Built <em>Escape VR</em>, a networked multiplayer VR escape room (Unity, Photon), and ran a <strong>60-participant user study</strong> on collaboration in shared virtual environments (advisor: Dr. Pablo Figueroa).</li>
+                                        <li>Built Unity/C# components for <em>Experience-Driven Optimization of Virtual Environments</em> as a SURF fellow (advisor: Dr. Christos Mousas). Earlier NLP work with word2vec and TensorFlow.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
             <div class="section" id="portfolio">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 ml-auto mr-auto">
-                            <div class="h4 text-center mb-4 title">Portfolio</div>                            
+                        <div class="col-md-10 ml-auto mr-auto">
+                            <div class="h4 text-center mb-4 title">Projects</div>                            
                             <div class="nav-align-center">
-                                <ul class="nav nav-pills nav-pills-primary" role="tablist">
-                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#projects-fav" role="tablist" > <i class="fa-solid fa-star" style="color: black;" aria-hidden="true"></i></a></li>
-                                    <li class="nav-item"><a class="nav-link"        data-toggle="tab" href="#project-unity" role="tablist" ><i class="fa-brands fa-unity" style="color: black;" aria-hidden="true"></i></a></li>
-                                    <li class="nav-item"><a class="nav-link"        data-toggle="tab" href="#project-unreal" role="tablist" > <img class="icon-container" src="images/unreal.svg" alt="Icon"></img></a></li>
-                                    <li class="nav-item"><a class="nav-link"        data-toggle="tab" href="#project-webgl" role="tablist" > <img class="icon-container" src="images/WebGL_Logo.svg" alt="Icon"></img></a></li>
-                               
+                                <ul class="nav nav-pills nav-pills-primary" role="tablist" style="flex-wrap:wrap;justify-content:center;">
+                                    <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#projects-fav" role="tablist">Featured</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#project-agents" role="tablist">AI Agents</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#project-collab" role="tablist">Collaboration</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#project-learning" role="tablist">Learning and Training</a></li>
+                                    <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#project-other" role="tablist">Other VR and Graphics</a></li>
                                 </ul>
                                   </div>
                             </div>
@@ -611,16 +769,28 @@ The project involved integrating various technical components, including XR inte
                     </div>
 
                     <div class="tab-content gallery mt-5">
-                        <div class="tab-pane" id="project-unity"  role="tabpanel">
+                        <div class="tab-pane active" id="projects-fav" role="tabpanel">
                             <div class="ml-auto mr-auto">
-
                                 <div class="container">
                                     <div class="container-grid">
-                                                                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#virtualRoomie" href="!#">
-                                            <figure class="cc-effect"><img src="images/videodoc(4) - frame at 0m7s.jpg" alt="Image"  width="550" height="370" />
-                                                <figcaption style.vertical-align : top >
-                                                    <div class="h4"> Virtual Roomie: Immersrive Layout Co-design with a Virtual Agent</div>
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#llmLecture" href="#">
+                                            <figure class="cc-effect"><img src="images/LLM-enhancedTeasser.jpg" alt="Pipeline that turns a lecture video into an immersive lecture with an LLM-driven virtual instructor"  width="550" height="370" />
+                                                <figcaption>
+                                                    <div class="h4">Transforming Lecture Videos into LLM-Enhanced Immersive Learning Experiences</div>
+                                                    <p>Engine: Unity</p>
+                                                    <p>Language: C#, Python</p>
+                                                    <p>2026 Paper TVCG (IEEE ISMAR 2026)</p>
+                                                </figcaption>
+                                            </figure>
+                                        </a></div>
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#virtualRoomie" href="#">
+                                            <figure class="cc-effect"><img src="images/videodoc(4) - frame at 0m7s.jpg" alt=""  width="550" height="370" />
+                                                <figcaption>
+                                                    <div class="h4"> Virtual Roomie: Immersive Layout Co-design with a Virtual Agent</div>
                                                     <p>Engine: Unity</p>
                                                     <p>Language: C#</p>
                                                     <p>2025 Paper ISMAR</p>
@@ -629,21 +799,9 @@ The project involved integrating various technical components, including XR inte
                                             </figure>
                                         </a></div>
 
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#hiraganavr" href="!#">
-                                            <figure class="cc-effect"><img src="images/HiraganaVR.png" alt="Image"  width="550" height="370" />
-                                                <figcaption style.vertical-align : top >
-                                                    <div class="h4">Hiragana VR</div>
-                                                    <p>Engine: Unity</p>
-                                                    <p>Language: C#</p>
-                                                    <p>2024 Collaborative</p>
-                                                
-                                                </figcaption>
-                                            </figure>
-                                        </a></div>
-                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#escapevr" href="!#">
-                                                <figure class="cc-effect"><img src="images/escapevrmain.jpg" alt="Image"  width="550" height="370"  />
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#escapevr" href="#">
+                                                <figure class="cc-effect"><img src="images/escapevrmain.jpg" alt=""  width="550" height="370"  />
                                                     <figcaption>
                                                         <div class="h4">Escape VR</div>
                                                         <p>Engine: Unity</p>
@@ -653,10 +811,92 @@ The project involved integrating various technical components, including XR inte
                                                     </figcaption>
                                                 </figure>
                                             </a></div>
-                                            
-                                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                                data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#rescueCraft" href="!#">
-                                                    <figure class="cc-effect"><img src="images/RescueCraft.png" alt="Image"  width="550" height="370" />
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#hiraganavr" href="#">
+                                            <figure class="cc-effect"><img src="images/HiraganaVR.jpg" alt=""  width="550" height="370" />
+                                                <figcaption>
+                                                    <div class="h4">Hiragana VR</div>
+                                                    <p>Engine: Unity</p>
+                                                    <p>Language: C#</p>
+                                                    <p>2024 Collaborative</p>
+                                                
+                                                </figcaption>
+                                            </figure>
+                                        </a></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="project-agents" role="tabpanel">
+                            <div class="ml-auto mr-auto">
+                                <div class="container">
+                                    <div class="container-grid">
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#llmLecture" href="#">
+                                            <figure class="cc-effect"><img src="images/LLM-enhancedTeasser.jpg" alt="Pipeline that turns a lecture video into an immersive lecture with an LLM-driven virtual instructor"  width="550" height="370" />
+                                                <figcaption>
+                                                    <div class="h4">Transforming Lecture Videos into LLM-Enhanced Immersive Learning Experiences</div>
+                                                    <p>Engine: Unity</p>
+                                                    <p>Language: C#, Python</p>
+                                                    <p>2026 Paper TVCG (IEEE ISMAR 2026)</p>
+                                                </figcaption>
+                                            </figure>
+                                        </a></div>
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#virtualRoomie" href="#">
+                                            <figure class="cc-effect"><img src="images/videodoc(4) - frame at 0m7s.jpg" alt=""  width="550" height="370" />
+                                                <figcaption>
+                                                    <div class="h4"> Virtual Roomie: Immersive Layout Co-design with a Virtual Agent</div>
+                                                    <p>Engine: Unity</p>
+                                                    <p>Language: C#</p>
+                                                    <p>2025 Paper ISMAR</p>
+                                                
+                                                </figcaption>
+                                            </figure>
+                                        </a></div>
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#freestAIleModal" href="#">
+                                                <figure class="cc-effect"><img src="images/freestAIle.jpg" alt="" />
+                                                    <figcaption>
+                                                        <div class="h4">FreestAIle</div>
+                                                        <p>Language: Python</p>
+                                                        <p>2021 Collaborative </p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="project-collab" role="tabpanel">
+                            <div class="ml-auto mr-auto">
+                                <div class="container">
+                                    <div class="container-grid">
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#escapevr" href="#">
+                                                <figure class="cc-effect"><img src="images/escapevrmain.jpg" alt=""  width="550" height="370"  />
+                                                    <figcaption>
+                                                        <div class="h4">Escape VR</div>
+                                                        <p>Engine: Unity</p>
+                                                        <p>Language: C#</p>
+                                                        <p>2023 Collaborative</p>
+
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                                data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#rescueCraft" href="#">
+                                                    <figure class="cc-effect"><img src="images/RescueCraft.jpg" alt=""  width="550" height="370" />
                                                         <figcaption>
                                                             <div class="h4">RescueCraft: Collaborative VR Environment for Emergency Training</div>
                                                             <p>Engine: Unity</p>
@@ -665,23 +905,10 @@ The project involved integrating various technical components, including XR inte
                                                         </figcaption>
                                                     </figure>
                                                 </a></div>
-                                                <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                                data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#optimizationVRModal" href="!#">
-                                                    <figure class="cc-effect"><img src="images/optimizationvr_opening.png" alt="Image"  width="550" height="370" />
-                                                        <figcaption>
-                                                            <div class="h4">Movile Development Optimization in VR</div>
-                                                            <p>Engine: Unity</p>
-                                                            <p>Language: C#</p>
-                                                            <p>2023 Solo </p>
-                                                        </figcaption>
-                                                    </figure>
-                                                </a></div>
-    
-                                            
-                                        
-                                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#harmonyModal" href="!#">
-                                                <figure class="cc-effect"><img src="images/Harmony2.jpeg" alt="Image"  class="center"  width="550" height="370"  />
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#harmonyModal" href="#">
+                                                <figure class="cc-effect"><img src="images/Harmony2.jpeg" alt=""  class="center"  width="550" height="370"  />
                                                     <figcaption>
                                                         <div class="h4">Harmony</div>
                                                         <p>Engine: Unity</p>
@@ -691,118 +918,32 @@ The project involved integrating various technical components, including XR inte
                                                 </figure>
                                             </a></div>
 
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#teachingGeometryModal" href="!#">
-                                                <figure class="cc-effect"><img src="images/TeachingGeometry1.png" alt="Image"  width="550" height="370" />
-                                                    <figcaption>
-                                                        <div class="h4">Teaching geometry with virtual reality</div>
-                                                        <p>Engine: Unity</p>
-                                                        <p>2021 Design and environment Solo</p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                   
-                                          
-
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#aerophobiaModal" href="!#">
-                                                <figure class="cc-effect"><img src="images/aerophobia.jpg" alt="Image" width="550" height="370"  />
-                                                    <figcaption>
-                                                        <div class="h4">Aerophobia meter in virtual reality</div>
-                                                        <p>Engine: Unity</p>
-                                                        <p>Language: C#</p>
-                                                        <p>2019 Solo </p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </div>
-                                          <!-- <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#freestAIleModal" href="!#">
-                                                <figure class="cc-effect"><img src="images/freestAIle.jpg" alt="Image" />
-                                                    <figcaption>
-                                                        <div class="h4">FreestAIle</div>
-                                                        <p>Language: Python</p>
-                                                        <p>2021 Collaborative </p>
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="tab-pane" id="project-unreal" role="tabpanel">
+                        <div class="tab-pane" id="project-learning" role="tabpanel">
                             <div class="ml-auto mr-auto">
-
-                                <div class="container">
-                                    <div class="container-grid">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#ruinstreasure" href="!#">
-                                            <figure class="cc-effect"><img src="images/RuinsoftheTreasure.png" alt="Image"  width="550" height="370" />
-                                                <figcaption style.vertical-align : top >
-                                                    <div class="h4"> Ruins of the Treasure</div>
-                                                    <p>Engine: Unreal</p>
-                                                    <p>Language: Blueprints</p>
-                                                    <p>2023 Solo</p>
-                                                
-                                                </figcaption>
-                                            </figure>
-                                        </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="tab-pane" id="project-webgl" role="tabpanel">
-                            <div class="ml-auto mr-auto">
-
-                                <div class="container">
-                                    <div class="container-grid">
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#webgl-murder" href="!#">
-                                            <figure class="cc-effect"><img src="images/webgl_project.png" alt="Image"  width="550" height="370" />
-                                                <figcaption style.vertical-align : top >
-                                                    <div class="h4">Murder</div>
-                                                    <p>Graphics Library: WebGL</p>
-                                                    <p>Language: Javascript</p>
-                                                    <p>2022 Solo</p>
-                                                
-                                                </figcaption>
-                                            </figure>
-                                        </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        
-                        <div class="tab-pane active" id="projects-fav" role="tabpanel">
-                            <div class="ml-auto mr-auto">
-
                                 <div class="container">
                                     <div class="container-grid">
 
-
-                                     <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#virtualRoomie" href="!#">
-                                            <figure class="cc-effect"><img src="images/videodoc(4) - frame at 0m7s.jpg" alt="Image"  width="550" height="370" />
-                                                <figcaption style.vertical-align : top >
-                                                    <div class="h4"> Virtual Roomie: Immersrive Layout Co-design with a Virtual Agent</div>
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#llmLecture" href="#">
+                                            <figure class="cc-effect"><img src="images/LLM-enhancedTeasser.jpg" alt="Pipeline that turns a lecture video into an immersive lecture with an LLM-driven virtual instructor"  width="550" height="370" />
+                                                <figcaption>
+                                                    <div class="h4">Transforming Lecture Videos into LLM-Enhanced Immersive Learning Experiences</div>
                                                     <p>Engine: Unity</p>
-                                                    <p>Language: C#</p>
-                                                    <p>2025 Paper ISMAR</p>
-                                                
+                                                    <p>Language: C#, Python</p>
+                                                    <p>2026 Paper TVCG (IEEE ISMAR 2026)</p>
                                                 </figcaption>
                                             </figure>
                                         </a></div>
 
-                                        <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#hiraganavr" href="!#">
-                                            <figure class="cc-effect"><img src="images/HiraganaVR.png" alt="Image"  width="550" height="370" />
-                                                <figcaption style.vertical-align : top >
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#hiraganavr" href="#">
+                                            <figure class="cc-effect"><img src="images/HiraganaVR.jpg" alt=""  width="550" height="370" />
+                                                <figcaption>
                                                     <div class="h4">Hiragana VR</div>
                                                     <p>Engine: Unity</p>
                                                     <p>Language: C#</p>
@@ -812,130 +953,128 @@ The project involved integrating various technical components, including XR inte
                                             </figure>
                                         </a></div>
 
-                                        
-                                
-                                         <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#escapevr" href="!#">
-                                                <figure class="cc-effect"><img src="images/escapevrmain.jpg" alt="Image"  width="550" height="370"  />
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                                data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#rescueCraft" href="#">
+                                                    <figure class="cc-effect"><img src="images/RescueCraft.jpg" alt=""  width="550" height="370" />
+                                                        <figcaption>
+                                                            <div class="h4">RescueCraft: Collaborative VR Environment for Emergency Training</div>
+                                                            <p>Engine: Unity</p>
+                                                            <p>Language: C#</p>
+                                                            <p>2022-2023 Collaborative </p>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a></div>
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#harmonyModal" href="#">
+                                                <figure class="cc-effect"><img src="images/Harmony2.jpeg" alt=""  class="center"  width="550" height="370"  />
                                                     <figcaption>
-                                                        <div class="h4">Escape VR</div>
+                                                        <div class="h4">Harmony</div>
                                                         <p>Engine: Unity</p>
                                                         <p>Language: C#</p>
-                                                        <p>2023 Collaborative</p>
-
-                                                    </figcaption>
-                                                </figure>
-                                            </a></div>
-                                            
-                                            <div class="cc-porfolio-image img-raised" data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#webgl-murder" href="!#">
-                                                <figure class="cc-effect"><img src="images/webgl_project.png" alt="Image"  width="550" height="370" />
-                                                    <figcaption style.vertical-align : top >
-                                                        <div class="h4">Murder</div>
-                                                        <p>Graphics Library: WebGL</p>
-                                                        <p>Language: Javascript</p>
-                                                        <p>2022 Solo</p>
-                                                    
+                                                        <p>2022 Team project (Main developer) </p>
                                                     </figcaption>
                                                 </figure>
                                             </a></div>
 
-                                        
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#teachingGeometryModal" href="#">
+                                                <figure class="cc-effect"><img src="images/TeachingGeometry1.jpg" alt=""  width="550" height="370" />
+                                                    <figcaption>
+                                                        <div class="h4">Teaching geometry with virtual reality</div>
+                                                        <p>Engine: Unity</p>
+                                                        <p>2021 Design and environment Solo</p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a></div>
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                                data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#optimizationVRModal" href="#">
+                                                    <figure class="cc-effect"><img src="images/optimizationvr_opening.jpg" alt=""  width="550" height="370" />
+                                                        <figcaption>
+                                                            <div class="h4">Mobile Development Optimization in VR</div>
+                                                            <p>Engine: Unity</p>
+                                                            <p>Language: C#</p>
+                                                            <p>2023 Solo </p>
+                                                        </figcaption>
+                                                    </figure>
+                                                </a></div>
+
                                     </div>
                                 </div>
-
-
-
                             </div>
                         </div>
 
+                        <div class="tab-pane" id="project-other" role="tabpanel">
+                            <div class="ml-auto mr-auto">
+                                <div class="container">
+                                    <div class="container-grid">
 
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#aerophobiaModal" href="#">
+                                                <figure class="cc-effect"><img src="images/aerophobia.jpg" alt="" width="550" height="370"  />
+                                                    <figcaption>
+                                                        <div class="h4">Aerophobia meter in virtual reality</div>
+                                                        <p>Engine: Unity</p>
+                                                        <p>Language: C#</p>
+                                                        <p>2019 Solo </p>
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </div>
 
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#ruinstreasure" href="#">
+                                            <figure class="cc-effect"><img src="images/RuinsoftheTreasure.jpg" alt=""  width="550" height="370" />
+                                                <figcaption>
+                                                    <div class="h4"> Ruins of the Treasure</div>
+                                                    <p>Engine: Unreal</p>
+                                                    <p>Language: Blueprints</p>
+                                                    <p>2023 Solo</p>
+                                                
+                                                </figcaption>
+                                            </figure>
+                                        </a></div>
+
+<div class="cc-porfolio-image img-raised" data-aos="fade-up"
+                                        data-aos-anchor-placement="top-bottom"><a data-toggle="modal" data-target="#webgl-murder" href="#">
+                                            <figure class="cc-effect"><img src="images/webgl_project.png" alt=""  width="550" height="370" />
+                                                <figcaption>
+                                                    <div class="h4">Murder</div>
+                                                    <p>Graphics Library: WebGL</p>
+                                                    <p>Language: Javascript</p>
+                                                    <p>2022 Solo</p>
+                                                
+                                                </figcaption>
+                                            </figure>
+                                        </a></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
                     </div>
-                </div>
             </div>
-            
             <div class="section" id="experience">
                 <div class="container cc-experience">
-                    <div class="h4 text-center mb-4 title">Work Experience</div>
+                    <div class="h4 text-center mb-4 title">Industry Experience</div>
                     <div class="card">
                         <div class="row">
                             <div class="col-md-3 bg-primary" >
                                 <div class="card-body cc-experience-header">
-                                    <p>August 2023 - April 2024 </p>
-                                    <div class="h5">Purdue University</div>
-                                </div>
-                            </div>
-                            <div class="col-md-9" >
-                                <div class="card-body">
-                                    <div class="h5">Teaching Assistant and Research Assistant</div>
-                                    <p><ul> <li> Prepared, taught, and graded Spanish at Undergraduate levels 2 and 3. </li>
-                                        <li>Developed a virtual environment in Unity for teaching Japanese.</li>
-                                        <li>Scripted and designed the logic for various activities within the virtual environment.</li>
-                                    </ul></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-md-3 bg-primary" >
-                                <div class="card-body cc-experience-header">
-                                    <p>January 2023 - May 2023 <br/> Feb 2022 - May 2022</p>
+                                    <p>Jan 2023 - May 2023 <br/> Feb 2022 - May 2022</p>
                                     <div class="h5">Unity Technologies</div>
                                 </div>
                             </div>
                             <div class="col-md-9" >
                                 <div class="card-body">
-                                    <div class="h5">Software Engineering Student Worker, Engine Support</div>
-                                    <p><ul> <li> Part of the graphics team in Engine Support, understand topics such as Render Pipeline, GPU, performance,
-                                        camera, overall rendering and others.</li>
-                                        <li>Test and reproduce different Unity projects in order to develop a solution to an specific graphics problem.</li>
-                                        <li>Scripting and analysis of Unity projects with C# and C++.</li>
-                                        <li>Debug and understand the Unity source code and the projects presented with problems</li>
-                                    </ul></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-md-3 bg-primary" >
-                                <div class="card-body cc-experience-header">
-                                    <p>May 2022 - August 2022</p>
-                                    <div class="h5">Purdue University</div>
-                                </div>
-                            </div>
-                            <div class="col-md-9" >
-                                <div class="card-body">
-                                    <div class="h5">Summer Undergraduate Research Fellowship</div>
-                                    <p>Part of Experience Driven Optimization of virtual Environments project at the Computer Graphics Technology
-                                        department (CGT) with Professor Christos Mousas.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="row">
-                            <div class="col-md-3 bg-primary" >
-                                <div class="card-body cc-experience-header">
-                                    <p>May 2022 - August 2022</p>
-                                    <div class="h5">Universidad de los Andes</div>
-                                </div>
-                            </div>
-                            <div class="col-md-9" >
-                                <div class="card-body">
-                                    <div class="h5">Undergraduate Teaching Assistant</div>
-                                    <p> <ul>
-                                        <li> design and analysis: Taught fundamental principles of algorithms to 2nd-year students and monitored a
-                                        group of 40 students during a semester and explained Dynamic Programming, graphs, and recursive algorithms.</li>
-                                        <li>Introduction to Systems and Computing Engineering: Taught and helped students develop soft skills and
-                                        programming skills with tools like App-Inventor and Unity.</li>
-                                        <li>Object-Oriented Programming: Provided guidance and support to students working on various projects to
-                                        understand OOP during advisory sessions using Java</li>
-                                    </ul></p>
+                                    <div class="h5">Software Engineering Intern, Development Support</div>
+                                    <p class="category">Remote, two internship terms</p>
+                                    <ul>
+                                        <li>Analyzed and optimized customer projects for rendering performance and memory, and reviewed HLSL shaders.</li>
+                                        <li>Built internal tooling and debugging utilities in C# and C++ that helped engineers localize performance bottlenecks.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -950,12 +1089,30 @@ The project involved integrating various technical components, including XR inte
                             </div>
                             <div class="col-md-9">
                                 <div class="card-body">
-                                    <div class="h5">Cognitive Computation engineer and Software developer</div>
-                                    <p> Part time worker at Banlinea. 
-                                        <ul>
-                                        <li>Developed Visual recognition, NLP and Neural networks researcher.</li>
-                                        <li>Worked on the development of a form to streamline process and developed frontend with React and backent with Kotlin.</li>
-                                        </ul></p>
+                                    <div class="h5">Cognitive Computation Engineer and Software Developer</div>
+                                    <ul>
+                                        <li>Worked on visual recognition, NLP, and neural network research.</li>
+                                        <li>Built a form to streamline an internal process, with a React frontend and a Kotlin backend.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" >
+                                <div class="card-body cc-experience-header">
+                                    <p>2022</p>
+                                    <div class="h5">Universidad de los Andes</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" >
+                                <div class="card-body">
+                                    <div class="h5">Undergraduate Teaching Assistant</div>
+                                    <ul>
+                                        <li>Algorithms design and analysis: taught dynamic programming, graphs, and recursion to a group of 40 second-year students.</li>
+                                        <li>Introduction to Systems and Computing Engineering, and Object-Oriented Programming: supported students with App Inventor, Unity, and Java projects.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -965,84 +1122,65 @@ The project involved integrating various technical components, including XR inte
             <div class="section" id="education">
                 <div class="container cc-education">
                     <div class="h4 text-center mb-4 title">Education</div>
-                        <div class="card">
-                        <div class="row">
-                            <div class="col-md-3 bg-primary" >
-                                <div class="card-body cc-education-header">
-                                    <p>2023 - 2025</p>
-                                    <div class="h5">Doctor in Philosophy</div>
-                                </div>
-                            </div>
-                            <div class="col-md-9" >
-                                <div class="card-body">
-                                    <div class="h5">Technology</div>
-                                    <p class="category">Purdue University</p>
-                                    <p><p> PhD student in Computer Graphics Technology at Purdue University.  <ul>
-                                         <li>Recipient of the Andrews Fellowship and Excellence Award.</li>
-                                        <li>Currently working on animation, HLSL/GLSL, and XR development.</li>
-                                        <li>Research focuses on advancing applications of computer graphics across fields.</li></ul>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-
-                    
-                    
-                    
                     <div class="card">
                         <div class="row">
                             <div class="col-md-3 bg-primary" >
                                 <div class="card-body cc-education-header">
-                                    <p>2023 - 2025</p>
-                                    <div class="h5">Master's Degree</div>
+                                    <p>Aug 2025 - Expected May 2029</p>
+                                    <div class="h5">Ph.D.</div>
                                 </div>
                             </div>
                             <div class="col-md-9" >
                                 <div class="card-body">
-                                    <div class="h5">Computer Graphics Technology</div>
-                                    <p class="category">Purdue University</p>
-                                    <p> Student working at the VR/AR Lab. <ul><li>Currently Research Assistant developing a VR environment for Japanese education.</li>
-                                        <li> Research focus on colaboration in virtual environments.</li>
-                                        <li>Paper accepted in ISMAR 2025.</li>
-                                        <li> Teaching Assistant of Spanish.</li></ul>
-
-                                    </p>
+                                    <div class="h5">Technology: Virtual Reality and Human-AI Interaction</div>
+                                    <p class="category">Purdue University, West Lafayette, IN</p>
+                                    <ul>
+                                        <li>Advisor: Dr. Christos Mousas. Co-advisor: Dr. Alejandra Magana.</li>
+                                        <li>Andrews Fellowship, a competitive institutional fellowship for incoming doctoral students.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
-
-
                     <div class="card">
                         <div class="row">
                             <div class="col-md-3 bg-primary" >
                                 <div class="card-body cc-education-header">
-                                    <p>2019 - 2023</p>
-                                    <div class="h5">Bachelor's Degree</div>
+                                    <p>Aug 2023 - May 2025</p>
+                                    <div class="h5">M.S.</div>
                                 </div>
                             </div>
                             <div class="col-md-9" >
                                 <div class="card-body">
-                                    <div class="h5">Systems and Computing Engineering</div>
-                                    <p class="category">Universidad de los Andes</p>
-                                    <p> <ul><li> Worked on the visual computing laboratory.</li> <li>Student council member: <ul><li>Lead projects, initiatives, and programs for students and the Systems Engineering Department. Some programs on
-                                        my direction include Tutoring and advising senior students program, Mental-health and motivation forums, and
-                                        Research finding undergrad programs.</li>
-                                        <li>Director of Systems Engineering Student Council and Systems Engineering representative, Student representative in
-                                        the Internationalization Committee, Student representative in the Welfare Committee, Student representative in
-                                        the Curricular Reform Monitoring Committee, Member of the Academic Committee.</li> </ul> 
-                                    </li>
-                                        <li>Member of the board of directos for ACM University chapter. </li>
-                                    </ul> </p>
+                                    <div class="h5">Computer Graphics Technology, GPA 4.00 / 4.00</div>
+                                    <p class="category">Purdue University, West Lafayette, IN</p>
+                                    <ul>
+                                        <li>Thesis: <em>Human-AI Co-Design in Virtual Reality</em>, a VR system in which an intelligent virtual agent proposes spatial layout modifications generated through cost-based optimization. Published at IEEE ISMAR 2025.</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
-
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-3 bg-primary" >
+                                <div class="card-body cc-education-header">
+                                    <p>Jan 2019 - Apr 2023</p>
+                                    <div class="h5">B.E.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-9" >
+                                <div class="card-body">
+                                    <div class="h5">Systems and Computing Engineering, GPA 4.36 / 5.00</div>
+                                    <p class="category">Universidad de los Andes, Bogota, Colombia (ABET-accredited)</p>
+                                    <ul>
+                                        <li>Capstone: <em>Escape VR</em>, a networked multiplayer VR system for studying collaboration under time pressure, evaluated with 60 participants.</li>
+                                        <li>Visual Computing Laboratory. Director of the Systems Engineering Student Council and student representative on several university committees. Board member of the ACM university chapter.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section" id="contact">
@@ -1057,7 +1195,7 @@ The project involved integrating various technical components, including XR inte
                                             <div class="col-md-6">
                                                 <div class="card-body">
                                                     <form action="https://formspree.io/f/xleznkjw" method="POST">
-                                                        <div class="p pb-3" ><strong>Feel free to contact me </strong>
+                                                        <div class="p pb-3" ><strong>Looking for a research intern in XR, LLM-driven agents, or learning technologies? Get in touch.</strong>
                                                             
                                                         </div>
                                                         <div class="row mb-3">
@@ -1113,7 +1251,9 @@ The project involved integrating various technical components, including XR inte
                                             <div class="col-md-6">
                                                 <div class="card-body">
                                                     <p class="mb-0"><strong>Email</strong></p>
-                                                    <p> al.jimenezf@outlook.com jimen198@purdue.edu </p>
+                                                    <p><a href="mailto:jimen198@purdue.edu">jimen198@purdue.edu</a></p>
+                                                    <p class="mb-0"><strong>Status</strong></p>
+                                                    <p>Open to research internships.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -1127,10 +1267,9 @@ The project involved integrating various technical components, including XR inte
         </div>
     </div>
     <footer class="footer">
-        <div class="h6 title text-center">Template by: Anthony Barnett</div>
         <div class="text-center text-muted">
-            <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com"
-                    target="_blank">TemplateFlip</a></p>
+            <p class="mb-1">&copy; 2026 Angela L. Jimenez. All rights reserved.</p>
+            <p class="mb-0" style="font-size:0.8rem;">Template: Creative CV by Anthony Barnett, design by <a class="credit" href="https://templateflip.com" target="_blank" rel="noopener">TemplateFlip</a></p>
         </div>
     </footer>
     <script src="js/core/jquery.3.2.1.min.js?ver=1.1.0"></script>
@@ -1139,6 +1278,11 @@ The project involved integrating various technical components, including XR inte
     <script src="js/now-ui-kit.js?ver=1.1.0"></script>
     <script src="js/aos.js?ver=1.1.0"></script>
     <script src="scripts/main.js?ver=1.1.0"></script>
+    <script>
+        // Play looping demo clips only while their modal is open
+        $(document).on('shown.bs.modal', function (e) { $(e.target).find('video.modal-loop').each(function () { this.play(); }); });
+        $(document).on('hidden.bs.modal', function (e) { $(e.target).find('video').each(function () { this.pause(); }); });
+    </script>
 </body>
 
 </html>
